@@ -106,6 +106,7 @@ class MainActivity : AppCompatActivity() {
 
         // when
         // while, for
+        // Array
 
         when(k){
             1 -> Toast.makeText(this, "number is 1", Toast.LENGTH_LONG).show()
@@ -158,13 +159,61 @@ class MainActivity : AppCompatActivity() {
         // print 10,9,...0
         // print -2, 1, 4,..., 31
 
+        var i1: Int
+        i1 = 10
+
+        while(i1 >= 0){
+            Log.d("TAG", i1.toString())
+
+            i1 = i1 - 1
+        }
+
+        var i2: Int
+        i2 = -2
+
+        while(i2 <= 31){
+            Log.d("TAG", i2.toString())
+
+            i2 = i2 + 3
+        }
 
 
+        // for loops
+        // לולאה
+
+        // i runs from 1 to 5
+        for(i in 1..5){
+            Log.d("TAG1", i.toString())
+        }
+
+        for (i in 0 until 10 step 2) {
+            Log.d("TAG2", i.toString())
+        } // Prints 0, 2, 4, 6, 8
 
 
+        // Array
 
+        val arr = IntArray(3)
+        arr[0] = 5
+        arr[1] = 11
+        arr[2] = 8
 
+        Log.d("TAG3", arr[0].toString())
 
+        // iterate over the array
+        // then number 2 is hardcoded, it cannot change
+        for(i in 0..2){
+            Log.d("TAG4", arr[i].toString())
+        }
+
+        // better version
+        // length = 3
+        var length = arr.size
+        for(i in 0..length - 1){
+            Log.d("TAG5", arr[i].toString())
+        }
+
+        // ex2
 
 
     }
