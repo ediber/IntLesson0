@@ -119,7 +119,12 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        // ex1
+        // check if number is larger, smaller, equal then 30
 
+        if(k == 30){
+            Toast.makeText(this, "equals 30", Toast.LENGTH_LONG).show()
+        }
 
 
 
