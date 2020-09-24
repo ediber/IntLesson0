@@ -213,7 +213,11 @@ class MainActivity : AppCompatActivity() {
             Log.d("TAG5", arr[i].toString())
         }
 
-        // ex2
+        // ex3
+        // build an array of size 5
+        // add numbers to the array
+        // print all numbers from the array
+
 
 
     }
