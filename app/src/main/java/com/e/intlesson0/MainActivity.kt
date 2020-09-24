@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
         // check if f is larger, smaller than 20
         if(k > 10){
           //  Toast.makeText(this, "a is greater than 10", Toast.LENGTH_LONG).show()
-            Log.d("TAG", "a is greater than 10")
+          //  Log.d("TAG", "a is greater than 10")
         } else if(k < 10){
         //    Toast.makeText(this, "a is smaller than 10", Toast.LENGTH_LONG).show()
         } else { // k == 10
@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        ////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////////////
         // lesson2
 
         // when
@@ -124,9 +124,39 @@ class MainActivity : AppCompatActivity() {
 
         if(k == 30){
             Toast.makeText(this, "equals 30", Toast.LENGTH_LONG).show()
+        } else if(k > 30){
+            Toast.makeText(this, "larger then 30", Toast.LENGTH_LONG).show()
+        } else{
+            Toast.makeText(this, "smaller then 30", Toast.LENGTH_LONG).show()
         }
 
+        // while loops
+        // קורה כל עוד התנאי מתקיים
 
+        var i: Int
+        i = 0
+
+        while(i < 5){
+            Log.d("TAG", i.toString())
+
+            i = i + 1
+           // i ++
+        }
+
+        Log.d("TAG", " ")
+
+        var j: Int
+        j = 6
+
+        while(j > 0){
+            Log.d("TAG", j.toString())
+
+            j = j - 2
+        }
+
+        // ex2
+        // print 10,9,...0
+        // print -2, 1, 4,..., 31
 
 
 
