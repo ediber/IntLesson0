@@ -3,7 +3,6 @@ package com.e.intlesson0
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.util.Log.INFO
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -14,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button.setOnClickListener(View.OnClickListener {
-            doSomething()
+            doSomething(edit.text.toString())
         })
 
 
@@ -22,9 +21,12 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun doSomething() {
+    private fun doSomething(num: String) {
+
 
         // variabales
+
+        var k: Int = num.toInt()
 
         var a: Int
         a = 13
@@ -36,9 +38,10 @@ class MainActivity : AppCompatActivity() {
 
         // c = 8
         c = a + b
-        //Toast.makeText(this, c.toString(), Toast.LENGTH_SHORT).show()
+        Log.d("TAG", c.toString())
 
-        
+
+
         var d: Double
         d = 3.8
 
@@ -59,6 +62,17 @@ class MainActivity : AppCompatActivity() {
 
         } else {
 
+
+
+
+
+
+
+
+
+
+
+
         }
 
         if(a < b){
@@ -67,13 +81,56 @@ class MainActivity : AppCompatActivity() {
 
         }*/
 
-        if(a > 10){
-            Toast.makeText(this, "a is greater than 10", Toast.LENGTH_LONG).show()
-        } else if(a < 10){
-            Toast.makeText(this, "a is smaller than 10", Toast.LENGTH_LONG).show()
-        } else {
-            Toast.makeText(this, "a equals 10", Toast.LENGTH_LONG).show()
 
+        // task 1
+        // create new vars
+        // 3 int vars
+        // do + - * operations
+        // store result in var f
+        // print results using log
+
+        // task 2
+        // check if f is larger, smaller than 20
+        if(k > 10){
+          //  Toast.makeText(this, "a is greater than 10", Toast.LENGTH_LONG).show()
+            Log.d("TAG", "a is greater than 10")
+        } else if(k < 10){
+        //    Toast.makeText(this, "a is smaller than 10", Toast.LENGTH_LONG).show()
+        } else { // k == 10
+       //     Toast.makeText(this, "a equals 10", Toast.LENGTH_LONG).show()
         }
+
+
+        ////////////////////////////////////////////////////////////////////////////
+        // lesson2
+
+        // when
+        // while, for
+
+        when(k){
+            1 -> Toast.makeText(this, "number is 1", Toast.LENGTH_LONG).show()
+            4 -> Toast.makeText(this, "number is 4", Toast.LENGTH_LONG).show()
+            5 ->{
+                // do whatever i want
+            }
+            else ->{
+                Toast.makeText(this, "number is not relevant", Toast.LENGTH_LONG).show()
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
