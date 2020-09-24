@@ -186,13 +186,17 @@ class MainActivity : AppCompatActivity() {
             Log.d("TAG1", i.toString())
         }
 
+        // i increazes by 2
         for (i in 0 until 10 step 2) {
             Log.d("TAG2", i.toString())
         } // Prints 0, 2, 4, 6, 8
 
 
+
+        //////////////////////////////
         // Array
 
+        // building empty array of size 3
         val arr = IntArray(3)
         arr[0] = 5
         arr[1] = 11
@@ -218,7 +222,22 @@ class MainActivity : AppCompatActivity() {
         // add numbers to the array
         // print all numbers from the array
 
+        // solution similar to our example above
 
+        // building empty array of size 4
+        val arr2 = IntArray(4)
+
+        // copy all values from arr to arr2
+        // last index in arr2 is empty, because arr2 is larger then arr
+        for(i in 0..arr.size-1){
+            arr2[i] = arr[i]
+        }
+        arr2[3] = 9
+
+        // print arr2
+        for (i in 0.. arr2.size-1){
+            Log.d("TAG6", arr2[i].toString())
+        }
 
     }
 }
