@@ -269,6 +269,29 @@ class MainActivity : AppCompatActivity() {
 
         var avg1 = average(1.0, 3.0)
         Log.d("TAG9", avg1.toString())
+
+        printList(lst0)
+
+        ////////////////// Object Oriented ///////////////////////////////////////
+
+        // dog0 is an object of class Dog
+
+        //      calling the constructor
+        val dog0 = Dog("rexy", 17)
+        val dog1 = Dog("tofi", 200)
+        dog0.bark()
+
+        dog0.run(55.0)
+        dog1.run(0.5)
+
+        val str1 = dog1.eat()
+        Log.d("TAG_DOG2", str1)
+
+        // ex1
+        // add a class called Cat
+        // class contains: name, age, amount of souls, color
+        // class methods: miao, chase bird
+
     }
 
     ////////////////////
@@ -286,5 +309,12 @@ class MainActivity : AppCompatActivity() {
     // and returns the average
     // use the funtion 2 times
     // Log the results
+
+    // function returns nothing
+    fun printList(edisList: MutableList<String>){
+        for(i in 0..edisList.size - 1){
+            Log.d("TAG10", edisList[i])
+        }
+    }
 
 }
