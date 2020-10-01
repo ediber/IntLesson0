@@ -239,5 +239,46 @@ class MainActivity : AppCompatActivity() {
             Log.d("TAG6", arr2[i].toString())
         }
 
+
+        ////////////////////////////////////////////////////////////
+        // lesson 3
+        // Array
+        // funtions
+        // Object oriented - תכנות מונחה עצמים ****
+
+
+        // arrays
+
+        var str0: String = "edi"
+
+        // mutable - can be changed
+        var lst0 = mutableListOf<String>()
+        lst0.add("regev")
+        lst0.add("rami")
+
+        for(i in 0..lst0.size - 1){
+            Log.d("TAG7", lst0[i])
+        }
+
+        var name = lst0[0]
+
+        //                 the use of the function
+        var avg0 = average(8.0, 10.0)
+
+        Log.d("TAG8", avg0.toString())
+
+        var avg1 = average(1.0, 3.0)
+        Log.d("TAG9", avg1.toString())
     }
+
+    ////////////////////
+    // functions
+    // adventage, can be called multiple times
+
+    // 1. function name, 2. parameters, 3. return type
+    fun average      (a: Double, b: Double): Double{
+        var c = (a + b) / 2
+        return c
+    }
+
 }
