@@ -279,7 +279,7 @@ class MainActivity : AppCompatActivity() {
         //      calling the constructor
         val dog0 = Dog("rexy", 17)
         val dog1 = Dog("tofi", 200)
-        dog0.bark()
+        dog0.makeNoise()
 
         dog0.run(55.0)
         dog1.run(0.5)
@@ -291,6 +291,19 @@ class MainActivity : AppCompatActivity() {
         // add a class called Cat
         // class contains: name, age, amount of souls, color
         // class methods: miao, chase bird
+
+
+        val cat0 = Cat("mitsi", 6, 1, "black")
+        cat0.makeNoise()
+        cat0.chaseBird("yellow")
+
+        ////////////////////// inheritance ירושה
+        dog0.run(20.0)
+        dog0.makeNoise()
+        val animal0 = Animal(12)
+        animal0.run(30.0)
+        val age = animal0.age
+        animal0
 
     }
 
