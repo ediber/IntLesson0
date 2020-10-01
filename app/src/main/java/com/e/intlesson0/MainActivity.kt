@@ -303,7 +303,35 @@ class MainActivity : AppCompatActivity() {
         val animal0 = Animal(12)
         animal0.run(30.0)
         val age = animal0.age
-        animal0
+
+        // polymorphism ריבוי צורות
+
+        // Dog is also an animal
+        val animal1 : Animal = Dog("lasi", 4)
+        animal1.makeNoise()
+
+        // Animal cannot be a dog
+     //   val animal2: Dog = Animal(6)
+
+        val animal2 : Animal = Wolf("wolfi", 4, "alpha")
+        animal1.makeNoise()
+
+        val wolf0 = Wolf("zevik", 3, "alpha")
+
+        var dogs0 = mutableListOf<Dog>()
+        dogs0.add(dog0)
+        dogs0.add(dog1)
+        dogs0.add(wolf0)
+        dogs0.add(Wolf("menashe", 53, "beta"))
+
+        for(tmpDog in dogs0){
+            tmpDog.run(5.0)
+
+            val str1 = tmpDog.eat()
+            Log.d("TAG_TMP_DOG", str1)
+        }
+
+
 
     }
 

@@ -5,7 +5,7 @@ import android.util.Log
 class Cat(var name: String, override var age: Int, var souls: Int, color: String): Animal(age) {
     // miao, chase bird
 
-    fun makeNoise(){
+    override fun makeNoise(){
         Log.d("TAG_CAT0", "mio")
     }
 

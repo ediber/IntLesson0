@@ -11,14 +11,14 @@ import android.util.Log
 
 
             // constructor
-class Dog(var name: String, override var age: Int): Animal(age) {
+open class Dog(open var name: String, override var age: Int): Animal(age) {
 
    /* // secondary constructor
     constructor(name: String) : this(name, 0)*/
 
 
     // method
-    public fun makeNoise(){
+    public override fun makeNoise(){
         Log.d("TAG_DOG0", "haw haw")
     }
 
@@ -27,7 +27,7 @@ class Dog(var name: String, override var age: Int): Animal(age) {
     }*/
 
     // this method returns a String
-    public fun eat(): String{
+    public open fun eat(): String{
         var str = "$name eating bonzo"
 
         return str
