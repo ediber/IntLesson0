@@ -281,4 +281,10 @@ class MainActivity : AppCompatActivity() {
         return c
     }
 
+    // ex0
+    // create a function that take 3 parameters
+    // and returns the average
+    // use the funtion 2 times
+    // Log the results
+
 }
