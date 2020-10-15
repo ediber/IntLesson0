@@ -332,6 +332,16 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        // lesson 4 //////////////////////////////////////////////////////////////////////////////
+        // interface
+        // super
+        // Android - getting started *******
+
+        val wolf1 = Wolf("shual", 13, "alpha")
+        wolf1.kill()
+
+        // exercize
+        // make cat implement IHunter
 
     }
 
