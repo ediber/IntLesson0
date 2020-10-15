@@ -19,6 +19,8 @@ open class Dog(open var name: String, override var age: Int): Animal(age) {
 
     // method
     public override fun makeNoise(){
+        // using the code of the father(Animal)
+        super.makeNoise()
         Log.d("TAG_DOG0", "haw haw")
     }
 

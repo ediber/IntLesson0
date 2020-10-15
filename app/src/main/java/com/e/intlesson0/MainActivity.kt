@@ -337,11 +337,47 @@ class MainActivity : AppCompatActivity() {
         // super
         // Android - getting started *******
 
+        // interface - a contract, class that implements an inteface must override all it's methods
+
         val wolf1 = Wolf("shual", 13, "alpha")
         wolf1.kill()
 
         // exercize
         // make cat implement IHunter
+
+        wolf1.houl(7)
+
+        val predators = mutableListOf<IPredator>()
+        predators.add(wolf0)
+        predators.add(wolf1)
+        predators.add(cat0)
+
+        for(tmpPredator in predators){
+            tmpPredator.kill()
+        }
+
+        dog0.makeNoise()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 
@@ -367,5 +403,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("TAG10", edisList[i])
         }
     }
+
+
 
 }
